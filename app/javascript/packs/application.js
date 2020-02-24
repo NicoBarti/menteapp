@@ -35,6 +35,7 @@ require("../fullpage.js/dist/fullpage.min.js")
 
 require("../highlightjs/highlight.pack.min.js")
 
+// require("../js/theme.min.js")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
