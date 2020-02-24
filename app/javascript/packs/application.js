@@ -38,7 +38,27 @@ require("../highlightjs/highlight.pack.min.js")
 import "@fortawesome/fontawesome-free/js/all";
 
 
-// require("../js/theme.min.js")
+require("../js/alert.js")
+require("../js/animation.js")
+require("../js/code.js")
+require("../js/dropdown.js")
+require("../js/faq.js")
+require("../js/fullpage.js")
+require("../js/map.js")
+require("../js/modal.js")
+// require("../js/navbar.js")
+require("../js/newsletter.js")
+require("../js/polyfill.js")
+require("../js/slider.js")
+require("../js/testimonials.js")
+require("../js/year.js")
+
+
+
+
+
+
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
