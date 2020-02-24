@@ -33,6 +33,8 @@ require('waypoints/lib/shortcuts/inview.min.js');
 require("../fullpage.js/vendors/scrolloverflow.min.js")
 require("../fullpage.js/dist/fullpage.min.js")
 
+require("../highlightjs/highlight.pack.min.js")
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
