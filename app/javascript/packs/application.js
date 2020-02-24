@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 import "jquery-parallax.js"
 
+require('waypoints/lib/jquery.waypoints.min');
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

@@ -6,6 +6,10 @@ environment.plugins.append(
   new webpack.ProvidePlugin({
     $: 'jquery',
     jQuery: 'jquery',
+
+    // esta opcion es para que funcione waypoint.jquery
+    'window.jQuery': 'jquery',
+
     Popper: ['popper.js', 'default']
   })
 )
