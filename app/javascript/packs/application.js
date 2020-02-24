@@ -30,6 +30,10 @@ import "jquery-parallax.js"
 require('waypoints/lib/jquery.waypoints.min');
 require('waypoints/lib/shortcuts/inview.min.js');
 
+require("../fullpage.js/vendors/scrolloverflow.min.js")
+require("../fullpage.js/dist/fullpage.min.js")
+
+
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
