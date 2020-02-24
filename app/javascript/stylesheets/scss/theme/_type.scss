@@ -5,26 +5,26 @@
 
 // Import fonts
 
-@font-face {
-  font-family: "Objective";
-  font-weight: 400;
-  src: url(../fonts/Objective/Objective-Regular.woff2) format("woff2"),
-       url(../fonts/Objective/Objective-Regular.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Objective";
-  font-weight: 500;
-  src: url(../fonts/Objective/Objective-Medium.woff2) format("woff2"),
-       url(../fonts/Objective/Objective-Medium.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Objective";
-  font-weight: 600;
-  src: url(../fonts/Objective/Objective-Bold.woff2) format("woff2"),
-       url(../fonts/Objective/Objective-Bold.woff) format("woff");
-}
+// @font-face {
+//   font-family: "Objective";
+//   font-weight: 400;
+//   src: url(../fonts/Objective/Objective-Regular.woff2) format("woff2"),
+//        url(../fonts/Objective/Objective-Regular.woff) format("woff");
+// }
+//
+// @font-face {
+//   font-family: "Objective";
+//   font-weight: 500;
+//   src: url(../fonts/Objective/Objective-Medium.woff2) format("woff2"),
+//        url(../fonts/Objective/Objective-Medium.woff) format("woff");
+// }
+//
+// @font-face {
+//   font-family: "Objective";
+//   font-weight: 600;
+//   src: url(../fonts/Objective/Objective-Bold.woff2) format("woff2"),
+//        url(../fonts/Objective/Objective-Bold.woff) format("woff");
+// }
 
 
 // Headings
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: $headings-letter-spacing;
 }
 
-h1, .h1, 
+h1, .h1,
 .display-1, .display-2, .display-3, .display-4 {
   line-height: $display-line-height;
 }
@@ -49,7 +49,7 @@ h1, .h1,
   h4, .h4 { font-size: $h4-font-size-sm }
   h5, .h5 { font-size: $h5-font-size-sm }
   h6, .h6 { font-size: $h6-font-size-sm }
-  
+
   // Display
 
   .display-3 { font-size: $display3-size-sm }
