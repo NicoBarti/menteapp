@@ -61,4 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // or the `imagePath` JavaScript helper below.
 //
 const images = require.context('../images', true)
+const icon = require.context('../images/icon-strokes', true)
 // const imagePath = (name) => images(name, true)
