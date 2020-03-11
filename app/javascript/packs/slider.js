@@ -31,10 +31,10 @@ document.addEventListener("turbolinks:load", () => {
       draggable: !elem.classList.contains('slider-no-draggable'),
       fade: elem.classList.contains('slider-fade'),
       imagesLoaded: true,
-      pageDots: false,
+      pageDots: true,
       prevNextButtons: !elem.classList.contains('slider-no-controls'),
       wrapAround: true,
-      // autoPlay: true 
+      // autoPlay: true
     });
   }
 
