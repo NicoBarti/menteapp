@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <%= javascript_packs_with_chunks_tag 'fullpage', 'slider', 'data-turbolinks-track': 'load' %>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -37,7 +39,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
           <!-- <svg class="navbar-brand-svg" viewBox="0 0 245 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> -->
             <!-- <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path> -->
             <!-- <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path> -->
@@ -249,8 +251,8 @@
     <section class="section section-top section-full">
 
       <!-- Slider -->
-      <div class="bg-slider">
-        <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg">
+      <div class="bg-slider" data-turbolinks-permanent>
+        <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg" >
           <div class="slider-item">
 
             <!-- Cover -->
