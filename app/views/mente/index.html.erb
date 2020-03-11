@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <%= javascript_packs_with_chunks_tag 'fullpage', 'slider', 'data-turbolinks-track': 'load' %>
+    <%= javascript_packs_with_chunks_tag 'fullpage', 'slider', 'data-turbolinks-track': 'reload' %>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,14 +62,14 @@
                 <span></span>
               </span>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="fab fa-github"></i>
                 <span class="d-xl-none ml-2">
                   Github
                 </span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="fab fa-twitter"></i>
@@ -92,28 +92,37 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Welcome
+                Pilares
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarWelcome">
                 <a class="dropdown-item " href="index.html">
-                  Header: Image
+                  Nutricion
                 </a>
                 <a class="dropdown-item  active " href="index-header-carousel.html">
-                  Header: Carousel
+                  Ejercicio físico
                 </a>
+                <!-- <a class="dropdown-item  active " href="index-header-carousel.html">
+                  Ejercicio físico
+                </a> -->
                 <a class="dropdown-item " href="index-header-parallax.html">
-                  Header: Parallax
+                  Sueño
                 </a>
                 <a class="dropdown-item " href="index-header-video.html">
-                  Header: Video
+                  Tabaco y alcohol
+                </a>
+                <a class="dropdown-item " href="index-header-video.html">
+                  Manejo del estres
+                </a>
+                <a class="dropdown-item " href="index-header-video.html">
+                  Relaciones sociales
                 </a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Landings
+              <a class="nav-link " href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recomendaciones
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarLandings">
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarLandings">
                 <a class="dropdown-item " href="app.html">
                   App
                 </a>
@@ -135,13 +144,14 @@
                 <a class="dropdown-item " href="service.html">
                   Service
                 </a>
-              </div>
+              </div> -->
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pages
+              <a class="nav-link " href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                Blog
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarPages">
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarPages">
                 <li class="dropright">
                   <a class="dropdown-item dropdown-toggle" href="#" id="pagesBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Blog
@@ -209,24 +219,26 @@
                     404
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </li>
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Components
+              <a class="nav-link " href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Noticias
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarComponents">
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarComponents">
                 <a class="dropdown-item " href="components-theme.html">
                   Theme
                 </a>
                 <a class="dropdown-item " href="components-bootstrap.html">
                   Bootstrap
                 </a>
-              </div>
+              </div> -->
             </li>
+
             <li class="nav-item ">
-              <a href="documentation.html" class="nav-link">
-                Documentation
+              <a href="#" class="nav-link">
+                Links
               </a>
             </li>
             <li class="nav-item-divider">
@@ -235,8 +247,8 @@
               </span>
             </li>
             <li class="nav-item">
-              <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="nav-link">
-                Purchase now
+              <a href="#" target="_blank" class="nav-link">
+                Contacto
               </a>
             </li>
           </ul>
@@ -255,22 +267,51 @@
         <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg" >
           <div class="slider-item">
 
-            <!-- Cover -->
+            <!-- Cover 1-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/Carrousel_mariposa.png' %>)"></div>
+
+          </div>
+          <div class="slider-item">
+
+            <!-- Cover 2-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/Carrousel_cambio.png' %>)"></div>
+
+          </div>
+          <div class="slider-item">
+
+            <!-- Cover 3-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_nutricional.png' %>)"></div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 4-->
             <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/ejercicio.jpg' %>)"></div>
 
           </div>
+
           <div class="slider-item">
 
-            <!-- Cover -->
-            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/nutricion.jpg' %>)"></div>
+            <!-- Cover 5-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_obesidad.png' %>)"></div>
 
           </div>
+
           <div class="slider-item">
 
-            <!-- Cover -->
-            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/med.jpg' %>)"></div>
+            <!-- Cover 6-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_microbiota.png' %>)"></div>
 
           </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 7-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_mindfulness.png' %>)"></div>
+
+          </div>
+
         </div>
       </div>
 
@@ -288,6 +329,8 @@
 
             <!-- Slider -->
             <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
+
+              <!-- Silder 1 -->
               <div class="slider-item">
 
                 <!-- Preheading -->
@@ -297,22 +340,23 @@
 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                  las claves para una vida sana
+                  Trabajar en equipo para reestablecer la salud física y mental, el bienestar y la confianza, a través de pequeños o grandes cambios en el estilo de vida
                 </h1>
 
                 <!-- Subheading -->
                 <p class="lead text-white text-muted text-center mb-5">
-                  haga más ejercicio!
                 </p>
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
-                    Saber más
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    leer más
                   </a>
                 </p>
 
               </div>
+
+              <!-- Silder 2 -->
               <div class="slider-item">
 
                 <!-- Preheading -->
@@ -322,22 +366,25 @@
 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                  las claves para una vida sana
+                  Una alimentación, adecuada , la actividad física y otros aspectos del estilo de vida pueden prevenir, e incluso revertir numerosas enfermedades crónicas, desde la diabetes e hipertensión hasta la depresión y ansiedad, algunos tipos de cáncer o el alzheimer
                 </h1>
 
                 <!-- Subheading -->
                 <p class="lead text-white text-muted text-center mb-5">
-                  coma saludable!
+
                 </p>
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
-                    Saber más
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
                   </a>
                 </p>
 
               </div>
+
+              <!-- Silder 3 -->
+
               <div class="slider-item">
 
                 <!-- Preheading -->
@@ -347,22 +394,124 @@
 
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                  las claves para una vida sana
-                </h1>
+                  ¿Influye lo que comemos en nuestra salud mental?                 </h1>
 
                 <!-- Subheading -->
                 <p class="lead text-white text-muted text-center mb-5">
-                  practique mindfulnes!
                 </p>
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
-                    Saber más
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
                   </a>
                 </p>
 
               </div>
+
+              <!-- Silder 4 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Tal vez seas un deportista apasionado.  Fantástico! Pero si no lo eres? Sólo ponte a caminar…                 </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 5 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Superamos a Estados Unidos y somos Numero 1: El 75% de los chilenos sufre de sobrepeso u obesidad. Puedes bajar de peso con una dieta de moda, pero ya sabes lo que viene despues…                 </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+
+              <!-- Silder 6 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                Eres el hogar de trillones de microorganismos que superan en número a tus propias células. Si los cuidas pueden ser grandes aliados para mantener tu cuerpo y mente saludables...
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 7 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                No se trata sólo de disminuir el estrés. Se trata de estar presente, vivir despierto, dejar atrás el continuo divagar que nos aleja de la experiencia.                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+
             </div>
 
           </div>
@@ -459,11 +608,11 @@
 
             <!-- Social links -->
             <ul class="list-inline list-unstyled text-md-right">
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-github"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="list-inline-item ml-3">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
