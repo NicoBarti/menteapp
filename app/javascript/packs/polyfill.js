@@ -5,6 +5,8 @@
 
 'use strict';
 
+document.addEventListener("turbolinks:load", () => {
+
 //
 // Dispatch ===================================
 //
@@ -39,3 +41,5 @@
         else return this.parentElement.closest(selector)
       };
 }(Element.prototype));
+
+})

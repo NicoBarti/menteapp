@@ -16,19 +16,19 @@ import "../stylesheets/application"
 //   $('[data-toggle="popover"]').popover()
 // })
 
-import Flickity from 'flickity'
+// import Flickity from 'flickity'
 
 
 
-import "jquery-parallax.js"
+// import "jquery-parallax.js"
 
-require('waypoints/lib/jquery.waypoints.min');
-require('waypoints/lib/shortcuts/inview.min.js');
-
-require("../fullpage.js/vendors/scrolloverflow.min.js")
-require("../fullpage.js/dist/fullpage.min.js")
-
-require("../highlightjs/highlight.pack.min.js")
+// require('waypoints/lib/jquery.waypoints.min');
+// require('waypoints/lib/shortcuts/inview.min.js');
+//
+// require("../fullpage.js/vendors/scrolloverflow.min.js")
+// require("../fullpage.js/dist/fullpage.min.js")
+//
+// require("../highlightjs/highlight.pack.min.js")
 
 import "@fortawesome/fontawesome-free/js/all";
 

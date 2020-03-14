@@ -5,6 +5,9 @@
 
 'use strict';
 
+document.addEventListener("turbolinks:load", () => {
+
+
 (function() {
 
   // Variables
@@ -18,7 +21,7 @@
   function animate(elem, event, index) {
     if ( event == 'fpAfterLoad' ) {
       var currentSection = elem.closest('.fp-section').classList.contains('active');
-      
+
       if ( currentSection ) {
         elem.classList.add('animate');
       }
@@ -70,5 +73,7 @@
 
     });
   });
-  
+
 })();
+
+})
