@@ -34,7 +34,7 @@
   </head>
   <body>
 
-
+<%= render 'globalPartials/navtoggle' %>
 
     <!-- HERO
     ================================================== -->
@@ -128,7 +128,7 @@
                 <!-- Button -->
                 <p class="text-center mb-0">
 
-                  <a href="<%= url_for(action: 'abouts', controller: 'mente', target: 'self')%>" class="btn btn-outline-primary text-white" >
+                  <a href="<%= url_for(action: 'index', controller: 'abouts', target: 'self')%>" class="btn btn-outline-primary text-white" >
                     leer más
                   </a>
                 </p>
