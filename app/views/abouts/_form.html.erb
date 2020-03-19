@@ -1,7 +1,7 @@
 <%= form_with(model: about, local: true) do |form| %>
   <% if about.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(about.errors.count, "error") %> prohibited this about from being saved:</h2>
+      <h2><%= pluralize(about.errors.count, "error") %> impidio que se grabara este about:</h2>
 
       <ul>
         <% about.errors.full_messages.each do |message| %>
@@ -10,6 +10,31 @@
       </ul>
     </div>
   <% end %>
+
+  <p>
+    <%= form.label :titulo %><br>
+    <%= form.text_field :titulo %>
+  </p>
+
+  <p>
+    <%= form.label :img %><br>
+    <%= form.text_field :img %>
+  </p>
+
+  <p>
+    <%= form.label :tema %><br>
+    <%= form.text_field :tema %>
+  </p>
+
+  <p>
+    <%= form.label :subtitulo %><br>
+    <%= form.text_field :subtitulo %>
+  </p>
+
+  <p>
+    <%= form.label :texto %><br>
+    <%= form.text_field :texto %>
+  </p>
 
   <div class="actions">
     <%= form.submit %>
