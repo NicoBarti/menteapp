@@ -5,10 +5,13 @@
 
 'use strict';
 
+import "bootstrap"
+
 document.addEventListener("turbolinks:load", () => {
 
-(function() {
+// (function() {
 
+// console.log('iniciando navba')
   // Variables
   // =========
 
@@ -18,7 +21,10 @@ document.addEventListener("turbolinks:load", () => {
   var isLight = false;
   var isCollapsed = false;
   var isTogglable = navbar.classList.contains('navbar-togglable');
-  console.log(navbarCollapse)
+
+// console.log(navbar)
+// console.log(navbarCollapse)
+// console.log(isTogglable)
 
   // Methods
   // =======
@@ -81,6 +87,7 @@ document.addEventListener("turbolinks:load", () => {
   // Window events
 
   "load scroll fpOnLeave".split(' ').forEach(function(e) {
+
     window.addEventListener(e, function(e) {
       var type = e.type;
       var index = ( e.detail ) ? e.detail.destination.index : undefined;
@@ -90,12 +97,9 @@ document.addEventListener("turbolinks:load", () => {
   });
 
   // Collapse events
+// console.log(this.navbarCollapse)
 
-console.log(navbarCollapse)
-
-console.log('hola')
-
-  this.navbarCollapse.on({
+  $(navbarCollapse).on({
     'show.bs.collapse': function() {
       toggleNavbar('collapse');
 
@@ -108,6 +112,6 @@ console.log('hola')
     }
   });
 
-})();
+// })();
 
 })

@@ -18,17 +18,20 @@ import "../stylesheets/application"
 
 import Flickity from 'flickity'
 
+// document.addEventListener("turbolinks:before-visit", () => {
+//   console.log(event.data)
+// })
 
 
-import "jquery-parallax.js"
+// import "jquery-parallax.js"
 
-require('waypoints/lib/jquery.waypoints.min');
-require('waypoints/lib/shortcuts/inview.min.js');
-
-require("../fullpage.js/vendors/scrolloverflow.min.js")
-require("../fullpage.js/dist/fullpage.min.js")
-
-require("../highlightjs/highlight.pack.min.js")
+// require('waypoints/lib/jquery.waypoints.min');
+// require('waypoints/lib/shortcuts/inview.min.js');
+//
+// require("../fullpage.js/vendors/scrolloverflow.min.js")
+// require("../fullpage.js/dist/fullpage.min.js")
+//
+// require("../highlightjs/highlight.pack.min.js")
 
 import "@fortawesome/fontawesome-free/js/all";
 

@@ -5,6 +5,9 @@
 
 'use strict';
 
+document.addEventListener("turbolinks:load", () => {
+
+
 (function() {
 
   // Variables
@@ -52,7 +55,7 @@
           destination: destination,
           direction: direction
         }});
-        
+
         window.dispatchEvent(event);
       }
     });
@@ -66,3 +69,4 @@
   }
 
 })();
+})

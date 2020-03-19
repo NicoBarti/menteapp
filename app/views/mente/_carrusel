@@ -1,0 +1,88 @@
+
+<section class="section section-top section-full">
+
+  <!-- Slider -->
+  <div class="bg-slider" >
+    <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg" >
+      <div class="slider-item">
+
+        <!-- Cover 1-->
+        <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/Carrousel_mariposa.png' %>)"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="bg-overlay"></div>
+
+  <!-- Triangles -->
+  <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+  <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-8 col-lg-7 order-md-2">
+
+        <!-- Slider -->
+        <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
+
+          <!-- Silder 1 -->
+          <div class="slider-item">
+
+            <!-- Preheading -->
+            <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+              Mente Vital
+            </p>
+
+            <!-- Heading -->
+            <h1 class="text-white text-center mb-4">
+              Trabajar en equipo para reestablecer la salud física y mental, el bienestar y la confianza, a través de pequeños o grandes cambios en el estilo de vida
+            </h1>
+
+            <!-- Subheading -->
+            <p class="lead text-white text-muted text-center mb-5">
+              Psiquiatría y estilo de vida
+            </p>
+
+            <!-- Button -->
+            <p class="text-center mb-0">
+              <a href="<%= url_for(action: 'index', controller: 'abouts', target: 'self')%>" class="btn btn-outline-primary text-white" >
+                leer más
+              </a>
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="col-6 col-md-2 order-md-1">
+
+        <!-- Controls -->
+        <div class="text-left">
+          <a href="#hero-slider" class="slider-control" data-slide="previous">
+            <span class="icon -icon-arrow-left icon-2x">
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-6 col-md-2 order-md-3">
+
+        <!-- Controls -->
+        <div class="text-right">
+          <a href="#hero-slider" class="slider-control" data-slide="next">
+            <span class="icon -icon-arrow-right icon-2x"></span>
+          </a>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+
+</section>

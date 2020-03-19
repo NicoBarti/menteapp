@@ -5,8 +5,10 @@
 
 'use strict';
 
+document.addEventListener("turbolinks:load", () => {
+
 (function() {
-  
+
   // Variables
   // =========
 
@@ -29,3 +31,4 @@
   }
 
 })();
+})
