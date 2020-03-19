@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+
+<img src="<%= asset_pack_path @about.img %>" alt="..." style="width: 350px">
+
+
+<h4>Tema (carrusel y about)</h4>
+<h6><%= @about.tema %><h6>
+</p>
+
+<h4>Texto del carrusel</h4>
+<h6><%= @about.carrusel %><h6>
+</p>
+
+
+  <h4>Titulo del about</h4>
+  <h6><%= @about.carrusel %><h6>
+  </p>
+
+  <h4>Subtitulo del about</h4>
+  <h7><%= @about.subtitulo %><h7>
+  </p>
+
+  <h4>Texto del about</h4>
+  <p><%= @about.texto %><p>
+
+
+<%= link_to 'Editar', edit_about_path(@about) %> |
+<%= link_to 'Volver', abouts_path %>

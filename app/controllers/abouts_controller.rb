@@ -3,13 +3,19 @@ class AboutsController < ApplicationController
 
   # GET /abouts
   # GET /abouts.json
+
+  # def about
+  #   render 'abouts.html'
+  # end
+
   def index
-    # @abouts = About.all
+    @abouts = About.all
   end
 
   # GET /abouts/1
   # GET /abouts/1.json
   def show
+     @article = About.find(params[:id])
   end
 
   # GET /abouts/new
@@ -69,7 +75,7 @@ class AboutsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def about_params
-      params.require(:about).permit(:img, :tema, :titulo, :subtitulo, :texto)
+      params.require(:about).permit(:img, :tema, :titulo, :subtitulo, :texto, :carrusel, :subtitSubrr, :subtitCont, :comentarios, :texto2, :texto3)
       # params.fetch(:about, {:img, :tema, :titulo, :subtitulo, :texto})
     end
   end
