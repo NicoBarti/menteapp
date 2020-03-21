@@ -1,4 +1,4 @@
-  
+
 <p id="notice"><%= notice %></p>
 
 <h1>Abouts</h1>
@@ -11,12 +11,18 @@
   </thead>
 
   <tbody>
-    <% @abouts.each do |about| %>
+
+      <tr>
+        <th>Tema</th>
+        <th>Titulo</th>
+        <th>Image (nombre archibo)</th>
+      </tr>
+      <% @abouts.each do |about| %>
       <tr>
         <td><%= about.tema %></td>
         <td><%= about.titulo %></td>
         <td><%= about.img %></td>
-        <td><%= link_to 'Detalle', about %></td>
+        <td><%= link_to 'Mostrar', about %></td>
         <td><%= link_to 'Editar', edit_about_path(about) %></td>
         <td><%= link_to 'Eliminar', about, method: :delete, data: { confirm: 'Segura?' } %></td>
       </tr>

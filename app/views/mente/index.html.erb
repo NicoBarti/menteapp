@@ -34,7 +34,7 @@
           <% @abouts.each do |about| %>
           <div class="slider-item">
             <!-- Cover 1-->
-            <div class="bg-cover" style="background-image: url(<%= about.img %>)"></div>
+            <div class="bg-cover" style="background-image: url(<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + about.img %>)"></div>
           </div>
           <% end %>
         </div>
