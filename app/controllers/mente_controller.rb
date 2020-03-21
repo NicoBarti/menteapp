@@ -1,7 +1,8 @@
 class MenteController < ApplicationController
-  def index
-    render 'mente/index.html.erb'
 
+  def index
+    @abouts = About.all
+    # render 'mente/index.html.erb'
   end
 
   def abouts

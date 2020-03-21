@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- <%= javascript_packs_with_chunks_tag 'fullpage', 'slider', 'data-turbolinks-track': 'reload' %> -->
+<meta name="turbolinks-cache-control" content="no-cache">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="<%= asset_pack_path 'media/images/ico/apple-touch-icon.png' %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= asset_pack_path 'media/images/ico/favicon-32x32.png' %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= asset_pack_path 'media/images/ico/favicon-16x16.png' %>"> -->
+    <!-- <link rel="manifest" href="images/ico/site.webmanifest"> -->
+    <!-- <link rel="mask-icon" color="#5bbad5" href="<%= asset_pack_path 'media/images/ico/safari-pinned-tab.svg' %>"> -->
+    <!-- <link rel="shortcut icon" href= "<%= asset_pack_path 'media/images/ico/favicon.ico' %>"> -->
+    <!-- <meta name="msapplication-TileColor" content="#da532c"> -->
+    <!-- <meta name="msapplication-config" content="assets/ico/browserconfig.xml"> -->
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css"> -->
+    <!-- <link rel="stylesheet" href="assets/libs/fullpage.js/dist/fullpage.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/libs/highlightjs/styles/codepen-embed.css"> -->
+    <!-- <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/libs/incline-icons/style.min.css"> -->
+
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/theme.min.css"> -->
+
+    <title>Mente Vital | Bienvenida</title>
+  </head>
+  <body>
+
+<%= render 'globalPartials/navtoggle' %>
+
+    <!-- HERO
+    ================================================== -->
+    <section class="section section-top section-full">
+
+      <!-- Slider -->
+      <div class="bg-slider" >
+        <div class="slider slider-no-controls slider-no-draggable slider-fade" id="hero-slider-bg" >
+          <div class="slider-item">
+
+            <!-- Cover 1-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/Carrousel_mariposa.png' %>)"></div>
+
+          </div>
+          <div class="slider-item">
+
+            <!-- Cover 2-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/Carrousel_cambio.png' %>)"></div>
+
+          </div>
+          <div class="slider-item">
+
+            <!-- Cover 3-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_nutricional.png' %>)"></div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 4-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/ejercicio.jpg' %>)"></div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 5-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_obesidad.png' %>)"></div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 6-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_microbiota.png' %>)"></div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <!-- Cover 7-->
+            <div class="bg-cover" style="background-image: url(<%= asset_pack_path 'media/images/carrousel_mindfulness.png' %>)"></div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="bg-overlay"></div>
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-8 col-lg-7 order-md-2">
+
+            <!-- Slider -->
+            <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
+
+              <!-- Silder 1 -->
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Trabajar en equipo para reestablecer la salud física y mental, el bienestar y la confianza, a través de pequeños o grandes cambios en el estilo de vida
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+
+
+
+                  <a href="<%= url_for(action: 'index', controller: 'abouts', target: 'self')%>" class="btn btn-outline-primary text-white" >
+                    leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 2 -->
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Una alimentación, adecuada , la actividad física y otros aspectos del estilo de vida pueden prevenir, e incluso revertir numerosas enfermedades crónicas, desde la diabetes e hipertensión hasta la depresión y ansiedad, algunos tipos de cáncer o el alzheimer
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 3 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  ¿Influye lo que comemos en nuestra salud mental?                 </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 4 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Tal vez seas un deportista apasionado.  Fantástico! Pero si no lo eres? Sólo ponte a caminar…                 </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 5 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                  Superamos a Estados Unidos y somos Numero 1: El 75% de los chilenos sufre de sobrepeso u obesidad. Puedes bajar de peso con una dieta de moda, pero ya sabes lo que viene despues…                 </h1>
+
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+
+              <!-- Silder 6 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                Eres el hogar de trillones de microorganismos que superan en número a tus propias células. Si los cuidas pueden ser grandes aliados para mantener tu cuerpo y mente saludables...
+                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+              <!-- Silder 7 -->
+
+              <div class="slider-item">
+
+                <!-- Preheading -->
+                <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
+                  Mente Vital
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-white text-center mb-4">
+                No se trata sólo de disminuir el estrés. Se trata de estar presente, vivir despierto, dejar atrás el continuo divagar que nos aleja de la experiencia.                <!-- Subheading -->
+                <p class="lead text-white text-muted text-center mb-5">
+                </p>
+
+                <!-- Button -->
+                <p class="text-center mb-0">
+                  <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+                    Leer más
+                  </a>
+                </p>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="col-6 col-md-2 order-md-1">
+
+            <!-- Controls -->
+            <div class="text-left">
+              <a href="#hero-slider" class="slider-control" data-slide="previous">
+                <span class="icon -icon-arrow-left icon-2x" style="color: #ffc107;">
+                </span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-6 col-md-2 order-md-3">
+
+            <!-- Controls -->
+            <div class="text-right">
+              <a href="#hero-slider" class="slider-control" data-slide="next">
+                <span class="icon -icon-arrow-right icon-2x" style="color: #ffc107;"></span>
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+
+  </body>
+</html>
