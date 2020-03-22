@@ -75,7 +75,7 @@ class AboutsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def about_params
-      params.require(:about).permit(:img, :tema, :titulo, :subtitulo, :texto, :carrusel, :subtitSubrr, :subtitCont, :comentarios, :texto2, :texto3)
+      params.require(:about).permit(:img, :tema, :titulo, :subtitulo, :texto, :carrusel, :subtitSubrr, :subtitCont, :comentarios, :texto2, :texto3, :subcarrusel)
       # params.fetch(:about, {:img, :tema, :titulo, :subtitulo, :texto})
     end
   end
