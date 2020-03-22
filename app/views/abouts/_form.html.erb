@@ -1,3 +1,7 @@
+<div class="card-body">
+
+<div class="form-group">
+
 <%= form_with(model: about, local: true) do |form| %>
   <% if about.errors.any? %>
     <div id="error_explanation">
@@ -11,62 +15,65 @@
     </div>
   <% end %>
 
-  <p>
+  <div class="form-group">
     <%= form.label :carrusel %><br>
-    <%= form.text_field :carrusel %>
-  </p>
+    <%= form.text_area :carrusel ,class: "form-control" %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :img %><br>
-    <%= form.text_field :img %>
-  </p>
+    <%= form.text_field :img ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :titulo %><br>
-    <%= form.text_field :titulo %>
-  </p>
+    <%= form.text_field :titulo ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :tema %><br>
-    <%= form.text_field :tema %>
-  </p>
+    <%= form.text_field :tema ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :subtitulo %><br>
-    <%= form.text_field :subtitulo %>
-  </p>
+    <%= form.text_field :subtitulo ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :subtitSubrr %><br>
-    <%= form.text_field :subtitSubrr %>
-  </p>
+    <%= form.text_field :subtitSubrr ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :subtitCont %><br>
-    <%= form.text_field :subtitCont %>
-  </p>
+    <%= form.text_field :subtitCont ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :comentarios %><br>
-    <%= form.text_field :comentarios %>
-  </p>
+    <%= form.text_area :comentarios ,class: "form-control"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :texto %><br>
-    <%= form.text_field :texto %>
-  </p>
+    <%= form.text_area :texto ,class: "form-control", rows: "5"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :texto2 %><br>
-    <%= form.text_field :texto2 %>
-  </p>
+    <%= form.text_area :texto2 ,class: "form-control", rows: "5"  %>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :texto3 %><br>
-    <%= form.text_field :texto3 %>
-  </p>
+    <%= form.text_area :texto3 ,class: "form-control", rows: "5" %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
+</div>
+</div>
