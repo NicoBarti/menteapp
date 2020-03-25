@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_22_155216) do
+ActiveRecord::Schema.define(version: 2020_03_25_013838) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_03_22_155216) do
     t.text "texto2"
     t.text "texto3"
     t.text "subcarrusel"
+    t.decimal "orden"
   end
 
   create_table "items", force: :cascade do |t|

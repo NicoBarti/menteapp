@@ -13,12 +13,14 @@
   <tbody>
 
       <tr>
+        <th>Orden</th>
         <th>Tema</th>
         <th>Titulo</th>
         <th>Image (nombre archibo)</th>
       </tr>
       <% @abouts.each do |about| %>
       <tr>
+        <td><%= about.orden %></td>
         <td><%= about.tema %></td>
         <td><%= about.titulo %></td>
         <td><%= about.img %></td>
