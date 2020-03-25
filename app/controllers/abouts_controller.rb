@@ -15,7 +15,8 @@ class AboutsController < ApplicationController
   # GET /abouts/1
   # GET /abouts/1.json
   def show
-     @article = About.find(params[:id])
+     @about = About.find(params[:id])
+     @tiles = About.all.sample(3)
   end
 
   # GET /abouts/new

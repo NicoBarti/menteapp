@@ -129,22 +129,24 @@
           Aquí encontrarás una selección de los temas escenciales para este nuevo enfoque de tu salud
         </p>
 
-        <!-- Team -->
+        <!-- Otros temas -->
         <div class="row">
+
+          <% @tiles.each do |tile| %>
           <div class="col-md-4">
 
             <!-- Card -->
             <div class="card card-sm border-0 mb-3 mb-md-0">
 
               <!-- Image -->
-              <img src="<%= @about.img %>" alt="..." class="card-img-top">
+              <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + tile.img %>" alt="..." class="card-img-top">
 
               <!-- Body -->
               <div class="card-body">
 
                 <!-- Title -->
                 <h5 class="card-title">
-                  Richard Roe, <small class="text-muted">Creative Director</small>
+                  <%=tile.titulo %> <small class="text-muted"> <%=tile.carrusel %> </small>
                 </h5>
 
                 <!-- Text -->
@@ -171,86 +173,10 @@
             </div> <!-- / .card -->
 
           </div>
-          <div class="col-md-4">
+          <% end %>
 
-            <!-- Card -->
-            <div class="card card-sm border-0 mb-3 mb-md-0">
 
-              <!-- Image -->
-              <img src="<%= @about.img %>" alt="..." class="card-img-top">
 
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Title -->
-                <h5 class="card-title">
-                  Ann Doe, <small class="text-muted">Designer</small>
-                </h5>
-
-                <!-- Text -->
-                <ul class="card-text list-inline list-unstyled">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-
-            </div> <!-- / .card -->
-
-          </div>
-          <div class="col-md-4">
-
-            <!-- Card -->
-            <div class="card card-sm border-0 mb-3 mb-md-0">
-
-              <!-- Image -->
-              <img src="<%= @about.img %>" alt="..." class="card-img-top">
-
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Title -->
-                <h5 class="card-title">
-                  Jane Doe, <small class="text-muted">Copywriter</small>
-                </h5>
-
-                <!-- Text -->
-                <ul class="card-text list-inline list-unstyled">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-
-            </div> <!-- / .card -->
-
-          </div>
         </div> <!-- / .row -->
 
       </div>
