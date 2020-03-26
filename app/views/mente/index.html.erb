@@ -19,7 +19,7 @@
           <% @abouts.each do |about| %>
           <div class="slider-item">
             <!-- Cover 1-->
-            <div class="bg-cover" style="background-image: url(<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + about.img %>)"></div>
+            <div class="bg-cover" style="background-image: url(<%= 'http://s3.amazonaws.com/perlinmentevital/' + about.img %>)"></div>
           </div>
           <% end %>
         </div>
@@ -53,9 +53,9 @@
                   <%= about.carrusel %>
                 </h1>
                 <!-- Subheading -->
-                <p class="lead text-white text-muted text-center mb-5">
+                <h3 class="lead text-white text-muted text-center mb-5">
                   <%= about.subcarrusel %>
-                </p>
+                </h3>
                 <!-- Button -->
                 <p class="text-center mb-0">
                   <a href="<%= about_path(about.id) %>" class="btn btn-outline-primary text-white" >
