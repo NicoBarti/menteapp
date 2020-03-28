@@ -152,7 +152,7 @@
 
                 <!-- Title -->
                 <h5 class="card-title">
-                  <%=tile.titulo %> <small class="text-muted"> <%=tile.subcarrusel %> </small>
+                  <%=tile.titulo %> <small class="text-muted"> <%= truncate(tile.subcarrusel, :length => 37, :separator => ' ')  %> </small>
                 </h5>
 
                 <!-- Text -->
