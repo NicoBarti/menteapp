@@ -83,18 +83,23 @@
         <p class="text-muted">
           <%= @about.texto %>
         </p>
+        <p class="text-muted">
+          <%= @about.texto2 %>
+        </p>
 
       </div>
       <div class="col-md-5">
 
         <!-- Content -->
         <p class="text-muted">
-          <%= @about.texto2 %>
+          <%= @about.texto3 %>
         </p>
         <p class="text-muted">
-          <%= @about.texto3 %>
+          <%= @about.texto4 %>
           </p>
-
+          <p class="text-muted">
+            <%= @about.texto5 %>
+            </p>
 
       </div>
     </div> <!-- / .row -->
@@ -133,6 +138,7 @@
         <div class="row">
 
           <% @tiles.each do |tile| %>
+          <a href="<%= about_path(tile.id) %>">
           <div class="col-md-4">
 
             <!-- Card -->
@@ -173,6 +179,7 @@
             </div> <!-- / .card -->
 
           </div>
+          </a>
           <% end %>
 
 
