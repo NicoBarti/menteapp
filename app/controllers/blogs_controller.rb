@@ -4,9 +4,14 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
+      @blogs = Blog.all.order("created_at DESC")
+  end
+
+  def muestra
     @blog = Blog.all.order(:created_at).first
     @featured = Blog.all.order(:created_at).slice(1,3)
     @antiguos = Blog.all.order(:created_at).slice(4,100)
+    render "/blogs/muestrablogs"
   end
 
   # GET /blogs/1

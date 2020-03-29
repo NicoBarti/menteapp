@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
 resources :abouts, :blogs
 
+get 'muestrablogs', to: 'blogs#muestra'
+
   # get 'abouts/index'
 end
