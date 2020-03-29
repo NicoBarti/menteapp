@@ -42,27 +42,10 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 col-xl-8">
 
-        <!-- Meta -->
-        <div class="row align-items-center justify-content-center no-gutters mb-4">
-          <div class="col-auto">
-
-            <div class="avatar mr-3">
-              <img src="assets/img/17.jpg" alt="..." class="img-cover rounded-circle">
-            </div>
-
-          </div>
-          <div class="col-auto">
-
-            <p class="mb-0 text-xs text-muted">
-              by <strong class="text-body">Judy Doe</strong> 2 hours ago
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
 
         <!-- Heading -->
         <h1 class="mb-5 font-weight-bold text-center">
-          What are the big reasons for marketing your business
+          <%= @blog.titulo %>
         </h1>
 
       </div>
@@ -71,11 +54,10 @@
       <div class="col-12">
 
         <!-- Image -->
-        <img src="assets/img/56.jpg" alt="..." class="img-fluid mb-3">
+        <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + @blog.img %>" alt="..." class="img-fluid mb-3">
 
         <!-- Caption -->
         <p class="text-center text-sm text-muted mb-5">
-          Sint cum consectetur error mollitia at, eius illo. Deleniti, magnam.
         </p>
 
       </div>
@@ -85,16 +67,16 @@
 
         <blockquote class="blockquote">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
+            <%= @blog.comentario %>
           </p>
         </blockquote>
 
         <p>
-          Lorem ipsum dolor sit amet, <a href="#!">consectetur adipisicing</a> elit. Accusantium, culpa iure ut quae. Consequuntur cumque voluptate assumenda placeat ipsum odit veritatis cupiditate, ea quam eaque, maxime nemo sint. In, fuga.
+            <%= @blog.texto1 %>
         </p>
 
         <p class="mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum dolores modi numquam! Placeat consequatur quisquam, ad hic dolore dolorum asperiores provident dolor, aspernatur expedita excepturi consectetur ullam <a href="#!">magni quod</a>.
+            <%= @blog.texto2 %>
         </p>
 
         <!-- Social -->
@@ -102,7 +84,7 @@
           <div class="col">
 
             <p class="mb-0 text-xs text-uppercase">
-              Share the post:
+              Comparte el post:
             </p>
 
           </div>
@@ -127,12 +109,12 @@
 
         <!-- Heading -->
         <h3 class="mb-5">
-          Reader's comments:
+          Comentarios de lectores:
         </h3>
 
         <!-- Count -->
         <p class="mb-0 text-uppercase text-xs text-muted">
-          2 comments found
+          2 comentarios encontrados
         </p>
 
         <hr>
@@ -141,7 +123,7 @@
         <form class="mb-5">
           <div class="form-group mb-0">
             <label class="mb-3">
-              Add a comment:
+              Agrega tu comentario:
             </label>
             <div class="row no-gutters">
               <div class="col-auto">
@@ -210,6 +192,40 @@
 
           </div>
         </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- FEATURED
+================================================== -->
+<section>
+  <div class="container section pb-0">
+    <div class="row align-items-stretch">
+
+        <% @featured.each do |feature| %>
+      <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+
+        <a class="card h-100" href="blog-post.html">
+          <div class="card-body">
+
+            <!-- Heading -->
+            <h4>
+                <%= feature.titulo %>
+            </h4>
+
+            <!-- Text -->
+            <p class="mb-0 text-sm text-muted">
+              <%= truncate(feature.texto1, :length => 80, :separator => ' ') %>
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+        <% end %>
+
 
       </div>
     </div> <!-- / .row -->

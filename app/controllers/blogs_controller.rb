@@ -12,6 +12,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+      @featured = Blog.all.order(:created_at).slice(1,3)
   end
 
   # GET /blogs/new
