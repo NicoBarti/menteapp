@@ -31,12 +31,10 @@
   </div>
 
   <div class="form-group">
-    <%= radio_button("form", "negritas", "text-muted") %><br>
-    <%= radio_button("form", "negritas", "normal") %>
-    <p><%= @about.negritas %> </p>
-  </div>
-
-
+    <%= form.label :negritas %>
+    <%= form.radio_button(:negritas, 'f') %> Texto por defecto
+    <%= form.radio_button(:negritas, 't' ) %> Texto negritas
+</div>
 
   <div class="form-group">
     <%= form.label :img %><br>
@@ -73,34 +71,72 @@
     <%= form.text_area :comentarios ,class: "form-control"  %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :texto %><br>
-    <%= form.text_area :texto ,class: "form-control", rows: "5"  %>
+<div class="row">
+  <div class="col-md-10">
+  <h3>Textos</h3>
   </div>
 
-  <div class="form-group">
-    <%= form.label :texto2 %><br>
-    <%= form.text_area :texto2 ,class: "form-control", rows: "5"  %>
-  </div>
+  <div class="col-md-5">
 
-  <div class="form-group">
-    <%= form.label :texto3 %><br>
-    <%= form.text_area :texto3 ,class: "form-control", rows: "5" %>
-  </div>
+        <div class="form-group">
+          <%= form.label :texto %><br>
+          <%= form.text_area :texto ,class: "form-control", rows: "5"  %>
+        </div>
 
-  <div class="form-group">
-    <%= form.label :texto4 %><br>
-    <%= form.text_area :texto4 ,class: "form-control", rows: "5" %>
-  </div>
+        <div class="form-group">
+          <%= form.label :texto2 %><br>
+          <%= form.text_area :texto2 ,class: "form-control", rows: "5"  %>
+        </div>
 
-  <div class="form-group">
-    <%= form.label :texto5 %><br>
-    <%= form.text_area :texto5 ,class: "form-control", rows: "5" %>
-  </div>
+        <div class="form-group">
+          <%= form.label :texto3 %><br>
+          <%= form.text_area :texto3 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto4 %><br>
+          <%= form.text_area :texto4 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto5 %><br>
+          <%= form.text_area :texto5 ,class: "form-control", rows: "5" %>
+        </div>
+    </div> <!-- / .cols -->
+
+    <div class="col-md-5">
+        <div class="form-group">
+          <%= form.label :texto6 %><br>
+          <%= form.text_area :texto6 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto7 %><br>
+          <%= form.text_area :texto7 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto8 %><br>
+          <%= form.text_area :texto8 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto9 %><br>
+          <%= form.text_area :texto9 ,class: "form-control", rows: "5" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :texto10 %><br>
+          <%= form.text_area :texto10 ,class: "form-control", rows: "5" %>
+        </div>
+  </div> <!-- / .cols -->
+</div> <!-- / .row -->
 
   <div class="actions">
     <%= form.submit %>
   </div>
+
+
 
 <% end %>
 </div>

@@ -43,7 +43,7 @@
             <div id="hero-slider" class="slider slider-no-controls slider-no-draggable slider-fade mb-5 mb-md-0" data-bind="slider" data-target="#hero-slider-bg">
 
     <% @abouts.each do |about| %>
-              <!>
+              <!-- Silder 1 -->
               <div class="slider-item">
                 <!-- Preheading -->
                 <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted">
@@ -51,12 +51,13 @@
                 </p>
                 <!-- Heading -->
                 <h1 class="text-white text-center mb-4">
-                  <%= about.carru
-                <
-                <p class="lead text-wh ">
-                  <p> <%= @about.negritas %> </p>
+                  <%= about.carrusel %>
+                </h1>
+                <!-- Subheading -->
+                <p class="lead text-white text-center mb-5 <%= about.negritas == 'f' ? "text-muted" : "" %> ">
                   <%= about.subcarrusel %>
                 </p>
+              
                 <!-- Button -->
                 <p class="text-center mb-0">
                   <a href="<%= about_path(about.id) %>" class="btn btn-outline-primary text-white" >
