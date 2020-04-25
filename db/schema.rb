@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_25_191954) do
+ActiveRecord::Schema.define(version: 2020_04_25_195211) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(version: 2020_04_25_191954) do
     t.decimal "orden"
     t.text "texto4"
     t.text "texto5"
-    t.boolean "negritas"
     t.text "texto6"
     t.text "texto7"
     t.text "texto8"
     t.text "texto9"
     t.text "texto10"
+    t.string "negritas"
   end
 
   create_table "blogs", force: :cascade do |t|

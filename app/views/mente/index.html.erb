@@ -54,10 +54,10 @@
                   <%= about.carrusel %>
                 </h1>
                 <!-- Subheading -->
-                <p class="lead text-white text-center mb-5 <%= about.negritas == 'f' ? "text-muted" : "" %> ">
+                <p class="lead text-white text-center mb-5 <%= about.negritas == 'n' ? "" : "text-muted" %> ">
                   <%= about.subcarrusel %>
                 </p>
-              
+
                 <!-- Button -->
                 <p class="text-center mb-0">
                   <a href="<%= about_path(about.id) %>" class="btn btn-outline-primary text-white" >
