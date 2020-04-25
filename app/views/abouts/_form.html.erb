@@ -31,6 +31,14 @@
   </div>
 
   <div class="form-group">
+    <%= radio_button("form", "negritas", "text-muted") %><br>
+    <%= radio_button("form", "negritas", "normal") %>
+    <p><%= @about.negritas %> </p>
+  </div>
+
+
+
+  <div class="form-group">
     <%= form.label :img %><br>
     <%= form.text_field :img ,class: "form-control"  %>
   </div>
