@@ -1,0 +1,4 @@
+.dropleft .dropdown-toggle::before {
+  width: 0px;
+  position: static !important;
+}
