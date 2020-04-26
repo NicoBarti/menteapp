@@ -207,7 +207,7 @@
         <% @featured.each do |feature| %>
       <div class="col-12 col-lg-4 mb-3 mb-lg-0">
 
-        <a class="card h-100" href="blog-post.html">
+        <a class="card h-100" href="<%= blog_path(feature.id) %>">
           <div class="card-body">
 
             <!-- Heading -->
@@ -226,7 +226,7 @@
       </div>
         <% end %>
 
-
+<br>
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
