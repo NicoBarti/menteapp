@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_25_195211) do
+ActiveRecord::Schema.define(version: 2020_04_27_042101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,15 @@ ActiveRecord::Schema.define(version: 2020_04_25_195211) do
     t.text "texto9"
     t.text "texto10"
     t.string "negritas"
+  end
+
+  create_table "autores", force: :cascade do |t|
+    t.string "nombre"
+    t.string "avatar"
+    t.text "descripcionCorta"
+    t.text "texto"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "blogs", force: :cascade do |t|

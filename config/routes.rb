@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :autores
   get 'reservadehora/index'
   get 'acrcade/index'
   resources :blogs
