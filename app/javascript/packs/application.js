@@ -68,4 +68,7 @@ document.addEventListener("turbolinks:load", () => {
 const images = require.context('../images', true)
 const icon = require.context('../images/icon-strokes', true)
 import "../images/icons/icon_font"
+// import "../images/OR_Logotipo MenteVital-HB.png"
+// import "../images/OR_Logotipo MenteVital-HB.png"
+//
 // const imagePath = (name) => images(name, true)
