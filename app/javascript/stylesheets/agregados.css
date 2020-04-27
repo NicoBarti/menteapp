@@ -2,3 +2,8 @@
   width: 0px;
   position: static !important;
 }
+
+.breadcrumb {
+    margin-top: 7rem !important;
+    padding-top: 35px !important
+}
