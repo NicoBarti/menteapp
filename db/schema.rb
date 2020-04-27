@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_27_042101) do
+ActiveRecord::Schema.define(version: 2020_04_27_045936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,8 @@ ActiveRecord::Schema.define(version: 2020_04_27_042101) do
     t.text "titulo"
     t.text "comentario"
     t.string "img"
+    t.bigint "autores_id"
+    t.index ["autores_id"], name: "index_blogs_on_autores_id"
   end
 
   create_table "items", force: :cascade do |t|
