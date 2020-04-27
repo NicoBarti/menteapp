@@ -1,0 +1,2 @@
+module AcrcadeHelper
+end
