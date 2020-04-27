@@ -28,8 +28,11 @@
         <span class="breadcrumb-item">
           <a href="<%= url_for(action: 'index', controller: 'mente', target: 'self')%>">MenteVital</a>
         </span>
+        <span class="breadcrumb-item">
+          <a href="<%= url_for(action: 'muestra', controller: 'blogs', target: 'self')%>">Blogs</a>
+        </span>
         <span class="breadcrumb-item active">
-          Temas
+          <%= @blog.titulo %>
         </span>
 
       </div>
@@ -202,7 +205,7 @@
 
 <!-- FEATURED
 ================================================== -->
-<section>
+<section class="mb-5">
   <div class="container section pb-0">
     <div class="row align-items-stretch">
 
