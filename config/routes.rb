@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'reservadehora/index'
   get 'acrcade/index'
   resources :blogs
   get 'mente/index'
