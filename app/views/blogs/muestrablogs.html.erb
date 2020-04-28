@@ -38,17 +38,37 @@
 <!-- HERO
 ================================================== -->
 <section>
-  <div class="container section section-top pb-0">
+  <div class="container section pb-0">
     <div class="row align-items-center">
-      <div class="col-12 col-md-6 offset-xl-1 order-md-2">
+      <div class="col-12 col-md-9 offset-xl-1 order-md-2">
 
         <!-- Image -->
         <div class="img-effect img-effect-dotted">
           <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + @blog.img %>" class="img-fluid" alt="...">
         </div>
-      
+
       </div>
-      <div class="col-12 col-md-6 col-xl-5 order-md-1">
+      <div class="col-12 col-md-3 col-xl-5 order-md-1">
+
+        <!-- Meta -->
+        <div class="row align-items-center justify-content-center no-gutters mb-4">
+          <div class="col-auto">
+
+            <div class="avatar mr-3">
+
+              <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + @autores.find(@blog.autores_id).avatar %>" alt="..." class="img-cover rounded-circle">
+            </div>
+
+          </div>
+          <div class="col-auto">
+
+            <p class="mb-0 text-xs text-muted">
+              por <strong class="text-body"> <%= @autores.find(@blog.autores_id).nombre %> </strong> hace <%= time_ago_in_words(@blog.updated_at) %>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
 
         <!-- Heading -->
         <h1 class="mb-4 font-weight-bold">
@@ -82,6 +102,26 @@
         <a class="card h-100" href="<%= blog_path(feature.id) %>">
 
           <div class="card-body">
+
+            <!-- Meta -->
+            <div class="row align-items-center no-gutters mb-4">
+              <div class="col-auto">
+
+                <div class="avatar mr-3">
+                  <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + @autores.find(feature.autores_id).avatar %>" alt="..." class="img-cover rounded-circle">
+                </div>
+
+              </div>
+              <div class="col">
+
+                <p class="mb-0 text-xs text-muted">
+                  por <strong class="text-body"> <%= @autores.find(feature.autores_id).nombre %> </strong> hace <%= time_ago_in_words(feature.updated_at) %>
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+
 
             <!-- Heading -->
             <h4>
@@ -124,6 +164,12 @@
 
           </div>
           <div class="col-12 col-md-9">
+
+            <!-- Meta -->
+            <p class="mb-0 text-xs text-muted">
+              por <strong class="text-body"> <%= @autores.find(antiguo.autores_id).nombre %> </strong> hace <%= time_ago_in_words(antiguo.updated_at) %>
+            </p>
+
 
             <!-- Heading -->
             <h4>
