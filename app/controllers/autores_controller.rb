@@ -28,7 +28,7 @@ class AutoresController < ApplicationController
 
     respond_to do |format|
       if @autore.save
-        format.html { redirect_to @autore, notice: 'Autore was successfully created.' }
+        format.html { redirect_to @autore, notice: 'Se creo el autor.' }
         format.json { render :show, status: :created, location: @autore }
       else
         format.html { render :new }

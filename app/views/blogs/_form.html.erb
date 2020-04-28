@@ -22,6 +22,8 @@
   <%= form.text_field :titulo ,class: "form-control" %>
 </div>
 
+<%= collection_select(:blog, :autores_id, Autore.all, :id, :nombre) %>
+
 <div class="form-group">
   <%= form.label :comentario %><br>
   <%= form.text_area :comentario ,class: "form-control" %>

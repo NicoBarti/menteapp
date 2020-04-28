@@ -1,3 +1,3 @@
 class Autore < ApplicationRecord
-  has_many :blogs
+  # has_many :blogs
 end

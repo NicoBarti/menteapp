@@ -11,6 +11,7 @@ class BlogsController < ApplicationController
     @blog = Blog.all.order(:created_at).first
     @featured = Blog.all.order(:created_at).slice(1,3)
     @antiguos = Blog.all.order(:created_at).slice(4,100)
+    @autores = Autore.all
     render "/blogs/muestrablogs"
   end
 
@@ -18,6 +19,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
       @featured = Blog.all.order(:created_at).slice(1,3)
+      @autores = Autore.all
   end
 
   # GET /blogs/new
@@ -78,6 +80,6 @@ class BlogsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def blog_params
       # params.fetch(:blog, {})
-      params.require(:blog).permit(:img, :titulo, :comentario, :texto2, :texto1)
+      params.require(:blog).permit(:img, :titulo, :comentario, :texto2, :texto1, :autores_id)
     end
 end
