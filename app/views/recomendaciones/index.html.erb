@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Recomendaciones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recomendaciones.each do |recomendacione| %>
+      <tr>
+        <td><%= recomendacione.titulo %></td>
+        <td><%= recomendacione.ruta %></td>
+        <td><%= link_to 'Show', recomendacione %></td>
+        <td><%= link_to 'Edit', edit_recomendacione_path(recomendacione) %></td>
+        <td><%= link_to 'Destroy', recomendacione, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Recomendacione', new_recomendacione_path %>

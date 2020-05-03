@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MenteVital | Recomendaciones </title>
+  </head>
+  <body>
+
+<div class="container mb-3">
+    <%= render 'globalPartials/navlight'%>
+</div>
+
+
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+  <div class="col-12 order-md-1">
+
+<!-- Nav -->
+
+
+    <nav class="nav nav-tabs mb-5">
+      <a href="#<%= @rec1.titulo %>" class="nav-item nav-link active" data-toggle="tab">
+        <%= @rec1.titulo %>
+      </a>
+
+        <% @recomendaciones.each do |r| %>
+      <a href="#<%= r.titulo %>" class="nav-item nav-link " data-toggle="tab">
+        <%=r.titulo %>
+      </a>
+      <% end %>
+    </nav>
+
+    <div class="tab-content mb-5">
+      <div class="tab-pane fade show active" id="<%=@rec1.titulo %>">
+        <img class="img-fluid" src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + @rec1.ruta %>" alt="">
+      </div>
+
+      <% @recomendaciones.each do |r| %>
+        <div class="tab-pane fade" id="<%=r.titulo %>">
+          <img class="img-fluid" src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + r.ruta %>" alt="">
+        </div>
+      <% end %>
+    </div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+</body>

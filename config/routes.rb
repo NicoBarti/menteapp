@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :recomendaciones
   resources :autores
   get 'reservadehora/index'
   get 'acrcade/index'
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
 resources :abouts, :blogs
 
 get 'muestrablogs', to: 'blogs#muestra'
+get 'muestrareco', to: 'recomendaciones#muestra'
 
   # get 'abouts/index'
 end
