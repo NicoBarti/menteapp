@@ -409,7 +409,10 @@ $breadcrumb-margin-bottom: 0 !default;
 $breadcrumb-bg: $gray-800 !default;
 $breadcrumb-divider-color: fade-out(white, .5) !default;
 $breadcrumb-active-color: fade-out(white, .5) !default;
-$breadcrumb-divider: "\f105" !default;
+// $breadcrumb-divider: ">" !default;
+// $breadcrumb-divider: ">" !important;
+
+// $breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
 $breadcrumb-heading-color: white !default;
 $breadcrumb-font-size: $font-size-base * .85 !default;
 

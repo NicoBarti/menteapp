@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MenteVital | Recomendaciones </title>
+  </head>
+  <body>
+
+<div class="container mb-3">
+    <%= render 'globalPartials/navlight'%>
+</div>
+
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 order-md-1">
+
+        <h3>Links de interes</h3>
+
+          <ul class="list-group mb-5">
+            <% @links.each do |l| %>
+            <a href= "<%= l.direccion %>" target="_blank">
+              <li class="list-group-item" >
+              <span> <strong><%= l.nombre %> </strong> <%= l.descripcion.presence ? (", " + l.descripcion) : "" %></span></li>
+            </a>
+            <% end %>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
