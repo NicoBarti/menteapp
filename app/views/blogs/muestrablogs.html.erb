@@ -96,7 +96,7 @@
   <div class="container section pb-0">
     <div class="row align-items-stretch">
 
-        <% @featured.each do |feature| %>
+        <% @featured.each do |feature|%>
       <div class="col-12 col-lg-4 mb-3 mb-lg-0">
 
         <a class="card h-100" href="<%= blog_path(feature.id) %>">
@@ -153,6 +153,7 @@
 
       <div class="col-12 col-md-9 col-lg-10 order-md-1">
 
+<% if @antiguos  %>
       <% @antiguos.each do |antiguo| %>
 
         <a class="row align-items-center text-nounderline"
@@ -186,6 +187,7 @@
 
         <hr class="my-4">
 
+      <% end %>
       <% end %>
 
       </div>
