@@ -16,7 +16,7 @@
 <section class="section pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4 order-md-2">
+      <div class="col-12 col-md-7 order-md-2">
 
         <!-- Preheading -->
         <p class="font-weight-medium text-xs text-uppercase text-primary">
@@ -33,11 +33,6 @@
           <%= acerca.texfoto %>
         </p>
 
-      </div>
-      <div class="col-12 col-md-8 order-md-1">
-
-        <!-- Image -->
-        <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + acerca.foto %>" alt="..." class="img-fluid mb-5 w-75" >
 
         <!-- Nav -->
         <nav class="nav nav-tabs mb-5">
@@ -70,12 +65,20 @@
               <%= acerca.texto5 %>
             </p>
 
-<% end %>
           </div>
 
         </div>
 
       </div>
+      <div class="col-12 col-md-5 order-md-1">
+
+        <!-- Image -->
+        <img src="<%= 'https://perlinmentevital.s3.us-east-2.amazonaws.com/' + acerca.foto %>" alt="..." class="img-fluid mb-5 w-75" >
+
+
+      </div>
+      <% end %>
+
     </div> <!-- / .row -->
   </div> <!-- / .container -->
 </section>
