@@ -1,0 +1,68 @@
+<%= form_with(model: acerca, local: true) do |form| %>
+  <% if acerca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(acerca.errors.count, "error") %> prohibited this acerca from being saved:</h2>
+
+      <ul>
+        <% acerca.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :foto %><br>
+    <%= form.text_field :foto ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :subtitulofoto %><br>
+    <%= form.text_field :subtitulofoto ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :titulofoto %><br>
+    <%= form.text_field :titulofoto ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texfoto %><br>
+    <%= form.text_area :texfoto ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :titulopie %><br>
+    <%= form.text_field :titulopie ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texto1 %><br>
+    <%= form.text_area :texto1 ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texto2 %><br>
+    <%= form.text_area :texto2 ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texto3 %><br>
+    <%= form.text_area :texto3 ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texto4 %><br>
+    <%= form.text_area :texto4 ,class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :texto5 %><br>
+    <%= form.text_area :texto5 ,class: "form-control" %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

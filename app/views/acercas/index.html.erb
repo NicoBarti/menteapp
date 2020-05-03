@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Acercas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @acercas.each do |acerca| %>
+      <tr>
+        <td><%= acerca.titulofoto %></td>
+        <td><%= link_to 'Show', acerca %></td>
+        <td><%= link_to 'Edit', edit_acerca_path(acerca) %></td>
+        <td><%= link_to 'Destroy', acerca, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Acerca', new_acerca_path %>

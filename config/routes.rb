@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :acercas
   resources :links
   resources :recomendaciones
   resources :autores
   get 'reservadehora/index'
-  get 'acrcade/index'
+  # get 'acrcade/index'
   resources :blogs
   get 'mente/index'
   get 'mente/:id', to: 'mente#show', as: :mente
