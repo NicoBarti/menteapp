@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'acrcade/index'
   resources :blogs
   get 'mente/index'
+  get 'mente/:id', to: 'mente#show', as: :mente
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'mente#index'
 
