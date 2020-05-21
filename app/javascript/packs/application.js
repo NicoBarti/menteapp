@@ -11,14 +11,26 @@ require("channels")
 import "bootstrap"
 import "../stylesheets/application"
 
+
 document.addEventListener("turbolinks:load", () => {
+  console.log('load')
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
   $('.popover-dismiss').popover({
     trigger: 'focus'
   })
-})
 
+  setTimeout(function(){
+    $('.automatico').popover('show')
+  }, 2500);
+
+  setTimeout(function(){
+    $('.automatico').popover('hide')
+    $('.automatico').popover('disable')
+  }, 6000);
+
+
+})
 
 
 import Flickity from 'flickity'
@@ -50,6 +62,7 @@ import "@fortawesome/fontawesome-free/js/all";
 // require("../js/map.js")
 // require("../js/modal.js")
 require("../js/navbar.js")
+
 // require("../js/newsletter.js")
 // require("../js/polyfill.js")
 // require("../js/slider.js")
