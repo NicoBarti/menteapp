@@ -20,14 +20,15 @@ document.addEventListener("turbolinks:load", () => {
     trigger: 'focus'
   })
 
-  setTimeout(function(){
-    $('.automatico').popover('show')
-  }, 2500);
-
-  setTimeout(function(){
-    $('.automatico').popover('hide')
-    $('.automatico').popover('disable')
-  }, 6000);
+  // Popover de inicio
+  // setTimeout(function(){
+  //   $('.automatico').popover('show')
+  // }, 2500);
+  //
+  // setTimeout(function(){
+  //   $('.automatico').popover('hide')
+  //   $('.automatico').popover('disable')
+  // }, 6000);
 
 
 })
