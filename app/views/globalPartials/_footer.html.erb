@@ -2,6 +2,10 @@
 ================================================== -->
 <footer class="section bg-dark">
 
+  <% flash.each do |notice| -%>
+        <%= content_tag :div, notice, class: "text-white" %>
+      <% end -%>
+
   <!-- Triangles -->
   <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
   <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
@@ -93,14 +97,18 @@
       </p> -->
 
       <!-- Form -->
-      <form>
+
+      <%= form_with url: "/contacts", method: :post do %>
+
+
+      <!-- <form> -->
         <div class="form-row">
           <div class="form-group col-md-6">
 
-            <!-- Name -->
+                      <!-- Name -->
             <label class="text-white">Nombre</label>
             <div class="input-group">
-              <input type="text" class="form-control order-1" name="contact-name">
+              <input type="text" class="form-control order-1" name="contact[nombre]" id="contact_nombre">
               <div class="input-group-append order-0">
                 <div class="input-group-text">
                   <svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -118,7 +126,7 @@
             <!-- Email -->
             <label class="text-white">e-mail</label>
             <div class="input-group">
-              <input type="email" class="form-control order-1" name="contact-email">
+              <input type="email" class="form-control order-1" name="contact[email]" id="contact_email">
               <div class="input-group-append order-0">
                 <div class="input-group-text">
                   <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -137,7 +145,7 @@
 
             <!-- Message -->
             <label class="text-white">Tus comentarios</label>
-            <textarea class="form-control" name="contact-message" rows="2"></textarea>
+            <textarea class="form-control" name="contact[comentario]" rows="2" id="contact_comentario"></textarea>
 
           </div>
         </div> <!-- / .form-row -->
@@ -147,19 +155,30 @@
 
             <!-- Submit -->
 
+            <div class="actions">
+              <!-- <input name="commit" type="submit" value="Enviar mensaje" data-disable-with="Enviar mensaje" /> -->
+              <button name="commit" type="submit" class="btn btn-sm btn-outline-primary text-white"
+              id="contactoBoton">
+                Enviar mensaje
+              </button>
+            </div>
 
-            <button type="submit" class="btn btn-sm btn-outline-primary text-white" >
-              Enviar mensaje
-            </button>
+            <div style="position: fixed; bottom: 140px; right: 5px;">
+            <a tabindex="0" class="contactoEnviado" data-toggle="popover" data-trigger="focus" title="Gracias!" data-content="Hemos recibido tu mensaje"></a>
+            </div>
 
-            <!-- Reset -->
-            <!-- <button type="reset" class="btn btn-link">
+
+
+        <button type="reset" class="btn btn-link">
               Reset form
-            </button> -->
+            </button>
 
           </div>
         </div>
-      </form>
+
+      <!-- </form> -->
+    <% end %>
+
     </div>
 
     </div> <!-- / .row -->

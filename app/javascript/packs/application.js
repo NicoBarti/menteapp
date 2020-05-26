@@ -13,26 +13,24 @@ import "../stylesheets/application"
 
 
 document.addEventListener("turbolinks:load", () => {
-  console.log('load')
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
   $('.popover-dismiss').popover({
     trigger: 'focus'
   })
 
-  // Popover de inicio
-  // setTimeout(function(){
-  //   $('.automatico').popover('show')
-  // }, 2500);
-  //
-  // setTimeout(function(){
-  //   $('.automatico').popover('hide')
-  //   $('.automatico').popover('disable')
-  // }, 6000);
+  document.getElementById("contactoBoton").onclick = function () {
+      setTimeout(function(){
+        $('.contactoEnviado').popover('show')
+      }, 100);
 
+      setTimeout(function(){
+        $('.contactoEnviado').popover('hide')
+        // $('.contactoEnviado').popover('disable')
+      }, 4000);
 
+      };
 })
-
 
 import Flickity from 'flickity'
 
