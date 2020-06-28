@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     I18n.with_locale(locale, &action)
   end
 
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url
+  end
+
 end

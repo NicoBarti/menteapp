@@ -18,7 +18,7 @@
         <!-- Brand -->
         <div class="row ml-4 mb-3 ">
           <!-- <p> -->
-            <a href="<%= url_for(action: 'index', controller: 'mente', target: 'self')%>" class="footer-brand text-white">
+            <a href="<%= url_for(action: 'index', controller: '/mente', target: 'self')%>" class="footer-brand text-white">
               <!-- <svg class="footer-brand-svg" viewBox="0 0 235 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> -->
             <img src="<%= asset_pack_path 'media/images/OR_Logotipo MenteVital-VB.svg' %>" height="120" alt="">
                 <!-- <path d="M0 0 L 20 10 L 0 20 Z" class="text-primary" fill="currentColor"></path>
@@ -34,7 +34,7 @@
     <div class="row mb-4 ml-4">
       <!-- <li class="list-inline-item"> -->
         <button type="button" class="btn btn-outline-secondary text-white" style="border-color: white" >
-          <a href="<%= url_for(action: 'index', controller: 'reservadehora')%>" class="text-primary">
+          <a href="<%= url_for(action: 'index', controller: '/reservadehora')%>" class="text-primary">
             Reserva tu hora
           </a>
         </button>
