@@ -11,6 +11,7 @@ class Ability
       else
         can :show, :all
         can :muestra, :all
+        can :create, Contact
       end
     #
     # The first argument to `can` is the action you are giving the user
