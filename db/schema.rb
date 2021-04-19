@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_28_010750) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 2021_04_19_193200) do
 
   create_table "abouts", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -54,6 +51,21 @@ ActiveRecord::Schema.define(version: 2020_06_28_010750) do
     t.text "texto5"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "texto6"
+    t.text "texto7"
+    t.text "texto8"
+    t.text "texto9"
+    t.text "texto10"
+    t.text "texto11"
+    t.text "texto12"
+    t.text "texto13"
+    t.text "texto14"
+    t.text "texto15"
+    t.text "texto16"
+    t.text "texto17"
+    t.text "texto18"
+    t.text "texto19"
+    t.text "texto20"
   end
 
   create_table "autores", force: :cascade do |t|
@@ -73,7 +85,7 @@ ActiveRecord::Schema.define(version: 2020_06_28_010750) do
     t.text "titulo"
     t.text "comentario"
     t.string "img"
-    t.bigint "autores_id"
+    t.integer "autores_id"
     t.text "texto3"
     t.text "texto4"
     t.text "texto5"
@@ -85,31 +97,12 @@ ActiveRecord::Schema.define(version: 2020_06_28_010750) do
     t.index ["autores_id"], name: "index_blogs_on_autores_id"
   end
 
-  create_table "clients", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "login"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "contacts", force: :cascade do |t|
     t.string "nombre"
     t.string "email"
     t.string "comentario"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "items", force: :cascade do |t|
-    t.decimal "itemid"
-    t.decimal "alt"
-    t.decimal "tiempo"
-    t.decimal "secuencia"
-    t.integer "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "links", force: :cascade do |t|
@@ -132,7 +125,7 @@ ActiveRecord::Schema.define(version: 2020_06_28_010750) do
   create_table "roles", force: :cascade do |t|
     t.string "name"
     t.string "resource_type"
-    t.bigint "resource_id"
+    t.integer "resource_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
@@ -152,8 +145,8 @@ ActiveRecord::Schema.define(version: 2020_06_28_010750) do
   end
 
   create_table "users_roles", id: false, force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "role_id"
+    t.integer "user_id"
+    t.integer "role_id"
     t.index ["role_id"], name: "index_users_roles_on_role_id"
     t.index ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
     t.index ["user_id"], name: "index_users_roles_on_user_id"
