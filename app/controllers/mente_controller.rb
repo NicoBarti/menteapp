@@ -4,7 +4,7 @@ class MenteController < ApplicationController
 
   def index
     # @texto = 'text-muted'
-    @abouts = About.all.order(:orden)
+    @abouts = About.all.shuffle
     # render 'mente/index.html.erb'
   end
 
