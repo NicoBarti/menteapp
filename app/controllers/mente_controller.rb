@@ -13,9 +13,10 @@ class MenteController < ApplicationController
 
   def show
     todos = About.all
-    @about = About.where(:id => params[:id]).take
-    @abouts = @about + (todos - @about)
+    about = About.where(:id => params[:id])
+    @abouts = about + (todos - about)
     @tiles = About.all.sample(3)
+    @about = About.find(params[:id])
     # bo = an
 
     render 'mente/index'
