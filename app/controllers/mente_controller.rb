@@ -14,7 +14,7 @@ class MenteController < ApplicationController
   def show
     todos = About.all
     @about = About.where(:id => params[:id])
-    @abouts = @about + (todos - about)
+    @abouts = @about + (todos - @about)
     @tiles = About.all.sample(3)
     # bo = an
 
