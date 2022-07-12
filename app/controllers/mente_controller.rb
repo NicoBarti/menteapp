@@ -5,7 +5,7 @@ class MenteController < ApplicationController
   def index
     # @texto = 'text-muted'
     @abouts = About.all.order(:orden)
-    @about = About.where(orden: 1)
+    @about = About.where(orden: 1).take!
     @tiles = About.all.sample(3)
 
     # render 'mente/index.html.erb'
@@ -15,6 +15,7 @@ class MenteController < ApplicationController
     todos = About.all
     about = About.where(:id => params[:id])
     @abouts = about + (todos - about)
+    @tiles = About.all.sample(3)
     # bo = an
 
     render 'mente/index'
