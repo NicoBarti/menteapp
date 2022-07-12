@@ -65,9 +65,9 @@
 
                 <!-- Button -->
                 <p class="text-center mb-0">
-                  <a href="<%= about_path(about.id) %>" class="btn btn-secondary " >
-                    leer más
-                  </a>
+                  <!--<a href="<%#= about_path(about.id) %>" class="btn btn-secondary " >-->
+                  <!--  leer más-->
+                  <!--</a>-->
                   <a href="<%= reservadehora_index_path %>" class="btn btn-outline-primary text-white" >
                     reserva tu hora
                   </a>
@@ -224,6 +224,7 @@
 
 <!-- boton pide hora
 ================================================== -->
+<br></br>
 <section class="section bg-light">
 
       <!-- Line -->
@@ -247,6 +248,7 @@
               <a href="<%= url_for(action: 'index', controller: '/reservadehora')%>" type="button" class="btn btn-outline-primary">
               Reserva tu hora
               </a>
+              
               
       <!-- </li> -->
     </div>
