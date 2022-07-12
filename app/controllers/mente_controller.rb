@@ -5,6 +5,9 @@ class MenteController < ApplicationController
   def index
     # @texto = 'text-muted'
     @abouts = About.all.order(:orden)
+    @about = About.where(orden: 1)
+    @tiles = About.all.sample(3)
+
     # render 'mente/index.html.erb'
   end
 
